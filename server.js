@@ -26,6 +26,13 @@ app.get('/users/:id', (req, res) => {
     })
 })
 
+app.get('/elijah', (req, res) => {
+    res.json({
+        success: true,
+        message: "elijah is a node.js developer"
+    })
+})
+
 app.post('/login', (req, res) => {
     const username = req.body.username
     const password = req.body.password
